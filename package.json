@@ -1,25 +1,23 @@
 {
   "name": "actions-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js project with GitHub Actions CI",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "jest",
+    "test:ci": "jest --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.3.0",
     "jest": "^30.2.0",
     "prettier": "^3.8.1"
   }
-  "scripts": {
-  "lint": "eslint .",
-  "test": "jest",
-  "test:ci": "jest --coverage"
-}
-
 }
